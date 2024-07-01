@@ -1,0 +1,189 @@
+<!--Reference 1:    https://docs.microsoft.com/en-us/openspecs/office_standards/ms-customui/7b552756-a970-466d-b7c2-ee5bbe171e34   -->
+<!--Reference 2:    http://www.andypope.info/vba/ribboneditor.htm   -->
+<!--Reference 3:    https://sourcedaddy.com/ms-excel/resetting-controls.html   -->
+<!--Reference 4:    https://www.microsoft.com/en-us/download/details.aspx?id=21103   -->
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_OnLoad">
+  <ribbon>
+    <tabs>
+      <tab id="Synthesizer" label="Synthesizer" insertAfterMso="TabHome">
+         <group id="Summarize" label="Summarize">
+          <box id="vbox1" boxStyle="vertical">
+            <button
+              id="initSummary"
+              label="Generate Summary Table"
+              size="large"
+              onAction="InitializeSummary"
+              imageMso="AutoFormatDialog"
+              screentip="Generate Summary Table"
+              supertip="Clicking this button generates the Summary Table (based on your Mapping table) where you can fill in the Inputs for each DataPoint."
+            />
+          </box>
+         </group>
+         <group id="Settings" label="Settings">
+          <box id="vbox2" boxStyle="vertical">
+            <box id="hbox1" boxStyle="horizontal">
+              <button
+                id="openOutput"
+                label="Input / Output Folder"
+                onAction="openOutputFolder"
+                screentip="Open Input / Output Folder"
+                supertip="Clicking this button will open the input / output folder in Windows Explorer."
+              />
+              <editBox
+                id="outputFolder"
+                getText="GetOutputFolder"
+                sizeString="WWWWWWWWWWWWWWWWWWWWWWWWWW"
+                onChange="UpdateOutputFolder"
+              />
+              <button
+                id="browseOutput"
+                imageMso="Folder"
+                onAction="browseOutputFolder"
+                screentip="Browse for an Input / Output Folder"
+                supertip="Clicking this button will open a Folder Select Dialog where you can choose an input / output folder."
+              />
+            </box>
+            <box id="hbox2" boxStyle="horizontal">
+              <button
+                id="openCalc"
+                label="Calc.  Template  Excel "
+                onAction="openCalculationTemplate"
+                screentip="Open Calculation Template Excel"
+                supertip="Clicking this button will open the calculation template file in Microsoft Excel."
+              />
+              <editBox
+                id="calculationTemplate"
+                getText="GetCalculationTemplate"
+                sizeString="WWWWWWWWWWWWWWWWWWWWWWWWWW"
+                onChange="UpdateCalculationTemplate"
+              />
+              <button
+                id="browseCalculation"
+                imageMso="Folder"
+                onAction="browseCalculationTemplate"
+                screentip="Browse for a Calculation Template Excel"
+                supertip="Clicking this button will open a File Select Dialog where you can choose a Calculation Template Excel file."
+              />
+            </box>
+          </box>
+        </group>
+        <group id="Actions" label="Actions">
+          <box id="vbox3" boxStyle="vertical">
+            <box id="hbox3" boxStyle="horizontal">
+              <labelControl
+                id="hbox1label"
+                label=" Generate"
+              />
+              <button
+                id="setPrev"
+                imageMso="CatalogMergeGoToPreviousRecord"
+                onAction="SetPrevItem"
+                screentip="Load Previous DataPoint"
+                supertip="Clicking this button will generate output for the Previous DataPoint and updates the summary table."
+              />
+              <editBox
+                id="selectedItem"
+                maxLength="3"
+                sizeString="WWW"
+                getText="GetCurrentItem"
+                onChange="UpdateCurrentItem"
+                screentip="Load Custom DataPoint"
+                supertip="Clicking this button will generate output for a custom DataPoint and updates the summary table."
+              />
+              <button
+                id="setNext"
+                imageMso="CatalogMergeGoToNextRecord"
+                onAction="SetNextItem"
+                screentip="Load Next DataPoint"
+                supertip="Clicking this button will generate output for the Next DataPoint and updates the summary table."
+              />
+              <button
+                id="computeAll"
+                label="All"
+                imageMso="AutoFormatChange"
+                onAction="ComputeAll"
+                screentip="Generates output for all datapoints"
+                supertip="Clicking this button will generate output for all the datapoints and updates the summary table."
+              />
+            </box>
+            <box id="hbox4" boxStyle="horizontal">
+              <button
+                id="exportOne"
+                label="Export"
+                onAction="ExportOne"
+                screentip="Prints Selected DataPoint to File"
+                supertip="Clicking this button will generate/print the selected DataPoint to File."
+              />
+              <dropDown id="exportFormat"
+                onAction="GetExportFormatIndex"
+                getSelectedItemIndex="SetExportFormatIndex"
+                sizeString="WWWWW"
+                screentip="Select an Export Format"
+                supertip="The DataPoints will be exported only in the selected Export Format."
+                >
+                <item id="item1" label=".pdf" />
+                <item id="item2" label=".xlsx" />
+                <item id="item3" label=".xlsb" />
+                <item id="item4" label=".xls" />
+                <item id="item5" label=".xlsm" />
+              </dropDown>
+              <button
+                id="exportAll"
+                label="All"
+                imageMso="PrintMenu"
+                onAction="ExportAll"
+                screentip="Print all DataPoints to File"
+                supertip="Clicking this button will generate/print all the DataPoints to File."
+              />
+            </box>
+          </box>
+        </group>
+        <group id="Import" label="Import">
+          <button
+            id="ImportData"
+            label="Import Data"
+            size="large"
+            onAction="importSpreadsheets"
+            imageMso="ImportExcel"
+            screentip="Import Data from Excel Workbooks"
+            supertip="Clicking this button will import data from all the spreadsheets in the Input Folder."
+            keytip="I"
+          />
+        </group>
+        <group id="ribbon" label="Help and Feedback">
+          <button
+            id="help"
+            label="Help"
+            size="large"
+            onAction="HelpVideo"
+            imageMso="Help"
+            screentip="Help"
+            supertip="Clicking this button will take you to Documentation for using this file."
+            keytip="H"
+          />
+          <button
+            id="feedback"
+            label="Feedback"
+            size="large"
+            onAction="Feedback"
+            imageMso="Heart"
+            screentip="Feedback"
+            supertip="Clicking this button will take you to GitHub StarGazers Page."
+            keytip="F"
+          />
+          <button
+            id="initiateUpdate"
+            getLabel="getVersionLabel"
+            size="large"
+            getVisible="isUpdatable"
+            onAction="initiateUpdate"
+            imageMso="UpgradeWorkbook"
+            screentip="Updated Version Available!"
+            supertip="Clicking this button will take you to the Latest Release page from where you could download."
+            keytip="D"
+          />
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
