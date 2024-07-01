@@ -6,8 +6,53 @@
   <ribbon>
     <tabs>
       <tab id="Synthesizer" label="Synthesizer" insertAfterMso="TabHome">
-         <group id="Summarize" label="Summarize">
-          <box id="vbox1" boxStyle="vertical">
+         <group id="About" label="About">
+            <box id="vbox4" boxStyle="vertical">
+              <button
+                id="readmeLink"
+                label="README"
+                imageMso="Info"
+                onAction="LaunchReadme"
+                screentip="Opens README file"
+                supertip="Clicking this button will open the README instructions in the browser."
+              />
+              <button
+                id="changelogLink"
+                label="Changelog"
+                imageMso="ReviewDisplayForReview"
+                onAction="LaunchChangelog"
+                screentip="Opens Changelog file"
+                supertip="Clicking this button will open the Changelog in the browser, where you can see the historical evolution of this spreadsheet."
+              />
+              <button
+                id="licenseLink"
+                label="License"
+                imageMso="GroupDigitalSignatures"
+                onAction="LaunchLicense"
+                screentip="Opens License file"
+                supertip="Clicking this button will open the License file in the browser."
+              />
+            </box>
+         </group>
+         <group id="Summarize" label="Map Data">
+            <button
+              id="templateSelector"
+              label="Select Template"
+              size="large"
+              onAction="browseCalculationTemplate"
+              imageMso="ImportExcel"
+              screentip="Opens Excel Template File Browser"
+              supertip="Select Template allows you to pick the Excel Template File."
+            />
+            <button
+              id="mapWizard"
+              label="Map Data Wizard"
+              size="large"
+              onAction="ShowMapDataWizard"
+              imageMso="CreateQueryFromWizard"
+              screentip="Opens Map Data Wizard"
+              supertip="Map Data Wizard is helps you with the mapping process by allowing you to pick the Value and Label cells for mapping."
+            />
             <button
               id="initSummary"
               label="Generate Summary Table"
@@ -17,7 +62,6 @@
               screentip="Generate Summary Table"
               supertip="Clicking this button generates the Summary Table (based on your Mapping table) where you can fill in the Inputs for each DataPoint."
             />
-          </box>
          </group>
          <group id="Settings" label="Settings">
           <box id="vbox2" boxStyle="vertical">

@@ -10,7 +10,10 @@ Public Declare PtrSafe Sub CopyMemory Lib "kernel32" Alias "RtlMoveMemory" (ByRe
         destination As Any, ByRef source As Any, ByVal length As Long)
 
 Private myRibbon As IRibbonUI
-Public Const version As Double = 1.1
+Public Const version As Double = 1.2
+Public Const readmeLink As String = "https://github.com/engineered-in/Synthesizer?tab=readme-ov-file#readme"
+Public Const changelogLink As String = "https://github.com/engineered-in/Synthesizer/blob/main/CHANGELOG.md"
+Public Const licenseLink As String = "https://github.com/engineered-in/Synthesizer?tab=MIT-1-ov-file#readme"
 Global latestVersion As Double
 
 Function GetRibbon(ByVal lRibbonPointer As LongPtr) As Object
@@ -39,13 +42,59 @@ End Sub
 Sub Ribbon_OnLoad(ByVal ribbon As Office.IRibbonUI)
     Set myRibbon = ribbon
     SETTINGS.Range("AZ1").Value = ObjPtr(ribbon)
-    README.Activate
-    README.Cells(1, 1).Select
     SUMMARY.Activate
     myRibbon.ActivateTab ("Synthesizer")
     latestVersion = CDbl(GetLatestTag())
     InvalidateControl "initiateUpdate"
     SETTINGS.visible = xlSheetVeryHidden
+End Sub
+
+'Callback for readmeLink onAction
+Sub LaunchReadme(control As IRibbonControl)
+    ThisWorkbook.FollowHyperlink readmeLink
+End Sub
+
+'Callback for changelogLink onAction
+Sub LaunchChangelog(control As IRibbonControl)
+    ThisWorkbook.FollowHyperlink changelogLink
+End Sub
+
+'Callback for licenseLink onAction
+Sub LaunchLicense(control As IRibbonControl)
+    ThisWorkbook.FollowHyperlink licenseLink
+End Sub
+
+'Callback for mapWizard onAction
+Sub ShowMapDataWizard(control As IRibbonControl)
+    Dim wb As Workbook
+    Dim canOpen As Boolean
+    canOpen = True
+    On Error Resume Next
+    If SETTINGS.Range("InputTemplate").text = "" Then
+        canOpen = False
+        messageBox "Template File is necessary for mapping." & vbNewLine _
+            & "Please select a valid Template File", "Template File not Selected", vbCritical
+    Else
+        Set oFSO = CreateObject("Scripting.FileSystemObject") ' Create FileSystemObject
+        Set wb = Workbooks(oFSO.GetFileName(SETTINGS.Range("InputTemplate").text)) ' Try to set workbook if already open
+        
+        If Err.Number <> 0 Then ' If error occurs (workbook not open), open the workbook
+            Err.Number = 0
+            Set wb = Workbooks.Open(SETTINGS.Range("InputTemplate").text, False, False)
+            If Err.Number <> 0 Then
+                Err.Number = 0
+                canOpen = False
+                messageBox "Unable to Open Template File" & vbNewLine _
+                & "Please select a valid Template File", "Template File Error", vbCritical
+            End If
+        End If
+    End If
+    If canOpen Then
+        MappingWizard.Show
+    End If
+    ThisWorkbook.Activate
+    MAPPER.Activate
+
 End Sub
 
 'Callback for initSummary onAction
@@ -184,7 +233,7 @@ End Sub
 
 'Callback for feedback onAction
 Sub Feedback(control As IRibbonControl)
-    ThisWorkbook.FollowHyperlink "https://github.com/engineered-in/Synthesizer/stargazers"
+    ThisWorkbook.FollowHyperlink "mailto:swarup+synthesizer@engineered.co.in?subject=Synthesizer%20-%20Feedback%20-%20reg.&body=Dear%20Swarup,%0D%0A%0D%0APlease%20find%20below%20my%20feedback%20on%20Synthesizer.xlsb%0D%0A%0D%0AFeedback [Positive/Negative]: %0D%0A%0D%0AComments:"
 End Sub
 
 'Callback for ImportData onAction
@@ -220,9 +269,13 @@ End Sub
 
 'Callback for calculationTemplate onChange
 Sub UpdateCalculationTemplate(control As IRibbonControl, text As String)
-    Set oFSO = CreateObject("Scripting.FileSystemObject")
-    If oFSO.FileExists(text) Then
+    If text = "" Then
         SETTINGS.Range("InputTemplate").Value = text
+    Else
+        Set oFSO = CreateObject("Scripting.FileSystemObject")
+        If oFSO.FileExists(text) Then
+            SETTINGS.Range("InputTemplate").Value = text
+        End If
     End If
     InvalidateControl "calculationTemplate"
 End Sub
@@ -231,7 +284,7 @@ End Sub
 Sub browseCalculationTemplate(control As IRibbonControl)
     Dim filePath As String
     Set oFSO = CreateObject("Scripting.FileSystemObject")
-    filePath = FileSelect("Choose a Folder to Trace...", SETTINGS.Range("InputTemplate").Value, "Excel Files", "*.xls;*.xlsx;*.xlsb;*.xlsm")
+    filePath = FileSelect("Select the Template Excel File...", SETTINGS.Range("InputTemplate").Value, "Excel Files", "*.xls;*.xlsx;*.xlsb;*.xlsm")
     If oFSO.FileExists(filePath) Then
         SETTINGS.Range("InputTemplate").Value = filePath
         InvalidateControl "calculationTemplate"

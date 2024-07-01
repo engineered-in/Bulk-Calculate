@@ -69,6 +69,44 @@ Sub getTemplateExcelObject(ByRef wb As Workbook)
     End If
 End Sub
 
+
+Function CellPicker( _
+            Optional ByVal promptMessage As String = "Pick a Cell", _
+            Optional ByVal promptTitle As String = "Pick a Cell", _
+            Optional ByVal retrieveName As Boolean = True, _
+            Optional ByVal allowRange As Boolean = False _
+        ) As String
+    
+    Dim selectedRange As Range
+    Dim cellDetails As String
+    
+    ' Initialize cellDetails to an empty string
+    cellDetails = ""
+    
+    On Error Resume Next
+    ' Show the input box to select a cell
+    Set selectedRange = Application.InputBox(promptMessage, promptTitle, Type:=8)
+    ' Check if the cell has a name and get the name or address
+    If retrieveName Then cellDetails = selectedRange.Name.Name
+    
+    ' If the cell doesn't have a name, use its address
+    If cellDetails = "" Then
+        If allowRange Then    ' If selection of range is allowed
+            cellDetails = selectedRange.Address
+        Else    ' If selection of range is NOT allowed, return the top left cell from the selection
+            cellDetails = selectedRange.Cells(1, 1).Address
+        End If
+    End If
+    
+    ' Combine the worksheet name with the cell name or address
+    CellPicker = selectedRange.Worksheet.Name & "/" & cellDetails
+    
+    
+End Function
+
+
+
+
 ' Subroutine to generate data for one entry
 Sub genOne()
     Dim wb As Workbook
