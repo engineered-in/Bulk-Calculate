@@ -1,77 +1,109 @@
-# Synthesizer
+# Bulk-Calculate
 
-![GitHub Release](https://img.shields.io/github/v/release/engineered-in/Synthesizer)
-![GitHub Stars](https://img.shields.io/github/stars/engineered-in/Synthesizer?style=social)
-[![Changelog](https://img.shields.io/badge/Changelog-📄-blue)](https://github.com/engineered-in/Synthesizer/blob/main/CHANGELOG.md)
-![GitHub Issues](https://img.shields.io/github/issues/engineered-in/Synthesizer)
-![GitHub Forks](https://img.shields.io/github/forks/engineered-in/Synthesizer)
-![GitHub License](https://img.shields.io/github/license/engineered-in/Synthesizer)
-![GitHub All Releases](https://img.shields.io/github/downloads/engineered-in/Synthesizer/total)
+![GitHub Release](https://img.shields.io/github/v/release/engineered-in/Bulk-Calculate)
+![GitHub Stars](https://img.shields.io/github/stars/engineered-in/Bulk-Calculate?style=social)
+[![Changelog](https://img.shields.io/badge/Changelog-📄-blue)](https://github.com/engineered-in/Bulk-Calculate/blob/main/CHANGELOG.md)
+![GitHub Issues](https://img.shields.io/github/issues/engineered-in/Bulk-Calculate)
+![GitHub Forks](https://img.shields.io/github/forks/engineered-in/Bulk-Calculate)
+![GitHub License](https://img.shields.io/github/license/engineered-in/Bulk-Calculate)
+![GitHub All Releases](https://img.shields.io/github/downloads/engineered-in/Bulk-Calculate/total)
 
-Synthesizer is an Excel-based tool designed for Synthesis of Excel Data.
+---
+[Download Bulk-Calculate](https://github.com/engineered-in/Bulk-Calculate/releases/latest/download/Bulk-Calculate.xlsb)
+</a> &nbsp; | &nbsp;
+<a href="mailto:swarup+bulk-calculate@engineered.co.in?subject=Bulk-Calculate%20-%20Feedback%20-%20reg.&body=Dear%20Swarup,%0D%0A%0D%0APlease%20find%20below%20my%20feedback%20on%20Bulk-Calculate.xlsb%0D%0A%0D%0AFeedback [Positive/Negative]: %0D%0A%0D%0AComments:"  target="_blank">Give Feedback</a> &nbsp; | &nbsp;
+<a href="https://github.com/sponsors/engineered-in" target="_blank">Sponsor Engineered-In</a>
 
-It aims to reduce the repetitive and time-consuming tasks and makes working with Template based excel files a breeze.
+---
+> ### Stop working with files and start working with data
 
-<a href="https://github.com/engineered-in/Synthesizer/releases/latest/download/Synthesizer.xlsb" style="display: inline-block; padding: 10px 20px; font-size: 16px; font-weight: bold; text-align: center; color: #fff; background-color: #007bff; border: none; border-radius: 5px; text-decoration: none; cursor: pointer;">
-  Download Synthesizer
-</a> &nbsp; &nbsp;
-<a href="mailto:swarup+synthesizer@engineered.co.in?subject=Synthesizer%20-%20Feedback%20-%20reg.&body=Dear%20Swarup,%0D%0A%0D%0APlease%20find%20below%20my%20feedback%20on%20Synthesizer.xlsb%0D%0A%0D%0AFeedback [Positive/Negative]: %0D%0A%0D%0AComments:" style="display: inline-block; padding: 10px 20px; font-size: 16px; font-weight: bold; color: #ffffff; background-color: #28a745; border: none; border-radius: 5px; text-decoration: none; cursor: pointer;" target="_blank">
-  Give Feedback
-</a> &nbsp; &nbsp;
-<a href="https://www.linkedin.com/company/engineeredin" style="display: inline-block; padding: 10px 20px; font-size: 16px; font-weight: bold; color: white; background-color: #0077b5; border: none; border-radius: 5px; text-decoration: none; text-align: center;">
-  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" alt="LinkedIn" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;"/>
-  Engineered-In
-</a>
+## What is Bulk-Calculate?
 
-## Features
+Bulk-Calculate is a powerful Excel spreadsheet utility that helps you streamline your calculation workflow.
 
-1. **Generate Multiple Files**:
-   - Create datasheets or calculations for multiple items using the same template.
-   - Automatically duplicate the template file with the correct data for each calculation.
+    With its intuitive interface and advanced features, you can:
 
-2. **Generate Summary Table**:
-   - Summarize input and output data from multiple workbooks into a single summary table.
+      ✅ Manage multiple calculation files with ease
+      ✅ Automate repetitive tasks and save hours of time
+      ✅ Get a bird's eye view of your calculation inputs and outputs
+
+### Are you tired of
+
+- Repetitive calculations that eat away your time?
+- Spending more time on data entry than on Optimization?
+- Finding errors and inconsistencies across similar calculations?
+- Missing out on valuable insights due to lack of benchmarking?
+- Losing sight of the big picture, with data scattered across multiple files?
+
+### Key Features
+
+- **Template-based calculations**: Use any of your calculation file as a template
+- **Mapping Wizard**: Easily map calculation input and output cells
+- **Summary table**: Get a clear view of your calculation inputs and outputs
+- **Bulk calculation**: Perform multiple calculations at once with a single click
+- **Bulk export**: Export individual calculation spreadsheets or PDF files from Summary table
+- **Bulk import**: Import data from existing calculation spreadsheets into a Summary table
+
+### Why Choose Bulk-Calculate?
+
+- **Save time**: Automate repetitive tasks and focus on what matters
+- **Boost productivity**: Get more done in less time with Bulk-Calculate
+- **Increase accuracy**: Reduce errors and inconsistencies across calculation files
+- **Simplify data management**: Keep track of multiple calculation files and outputs with ease
+
+### Transitioning to a Data-Driven Organization?
+
+If your organization is transitioning to a data-driven approach, think of **Bulk-Calculate** as the essential utility that ensures smooth and reliable way to your end users to work with data.
+
+It allows your users to work with data using a very familiar excel interface.
+
+It is much like a feeder service in a metro network providing last-mile connectivity.
+
 
 ## Download
 
-1. Download the <a href="https://github.com/engineered-in/Synthesizer/releases/latest/download/Synthesizer.xlsb" target="_blank">Synthesizer.xlsb</a>.
+1. Download the <a href="https://github.com/engineered-in/Bulk-Calculate/releases/latest/download/Bulk-Calculate.xlsb" target="_blank">Bulk-Calculate.xlsb</a> to a [Trusted Location](https://github.com/engineered-in/Bulk-Calculate/wiki/Excel-Trusted-Location).
 2. Open the file in Microsoft Excel.
-3. Enable macros when prompted to ensure all functionalities work correctly.  Optionally you can save the workbook in a Trusted Location.
+3. Enable macros when prompted to ensure all functionalities work correctly.
 
-## Usage
+## How to Use?
 
-### A) Generating Multiple Files with a Template
+### 1. Selecting template spreadsheet
 
-1. **Open Synthesizer**: Open the `Synthesizer.xlsb` file in Excel. A new ribbon "Synthesizer" will appear.
-2. **Select Template**: Click on `Select Template` button from the Synthesizer ribbon (available in Map Data group)
-3. **Map Data Wizard**: Use the Map Data Wizard to interactively map all the input and output variables from the selected Template File
-4. **Generate Summary Table**:
-   - Go to the "Summary" sheet.
-   - Click "Generate Summary Table" in the Synthesizer ribbon. All variables defined in the "Mapper" sheet will appear as headers.
-5. **Input Data**: Copy and paste all the input variable information into the respective columns in the "Summary" sheet.
-6. **Set Output Folder**:
-   - Select the "Input/Output Folder" icon in the Synthesizer ribbon.
-   - Choose a folder where you want the files to be saved.
-7. **Select File Format**:
-   - Choose the file format (e.g., pdf, xlsx) in the "Export" dropdown.
-8. **Generate Files**:
-   - Click the "All" button in the Synthesizer ribbon to generate the files.
-   - The files will be available in the selected folder.
+- Open the `Bulk-Calculate.xlsb` file in Excel. A new ribbon "Bulk-Calculate" will appear.
+- Click on `Select Template` button from the Bulk-Calculate ribbon (available in Map Data group)
 
-### B) Creating a Summary from Multiple Workbooks
+### 2. Interactively map your template using Map Data Wizard
 
-1. **Open Synthesizer**: Open the `Synthesizer.xlsb` file in Excel. A new ribbon "Synthesizer" will appear.
-2. **Select Template**: Click on `Select Template` button from the Synthesizer ribbon (available in Map Data group)
-3. **Map Data Wizard**: Use the Map Data Wizard to interactively map all the input and output variables from the selected Template File
-4. **Generate Summary Table**:
-   - Go to the "Summary" sheet.
-   - Click "Generate Summary Table" in the Synthesizer ribbon. All variables defined in the "Mapper" sheet will appear as headers.
-5. **Consolidate Workbooks**: Place all workbooks in a single folder.
-6. **Set Input Folder**:
-   - Select the "Input/Output Folder" icon in the Synthesizer ribbon.
-   - Choose the folder containing the workbooks.
-7. **Import Data**:
-   - Click "Import Data" in the Synthesizer ribbon to populate the "Summary" sheet with data from the workbooks.
+- Use the `Map Data Wizard` to interactively map all the input and output variables from your selected Template File
+
+### 3. Generate Summary Table
+
+- Go to the "Summary" sheet.
+- Click `Generate Summary Table` in the Bulk-Calculate ribbon. All variables defined in the "Mapper" sheet will appear as headers.
+
+### 4. Fill the Summary table with your inputs
+
+- Copy and paste all the input variable information into the respective columns in the "Summary" sheet.
+
+### 5. Bulk calculate outputs
+
+- Click on the `Calculate All` button to perform bulk calculation on all the records of the Summary Table
+
+### 6. Bulk export
+
+- Select the `Input/Output Folder` icon in the Bulk-Calculate ribbon.
+- Choose a folder where you want the files to be saved.
+- Choose the file format (e.g., pdf, xlsx) in the "Export" dropdown.
+- Click the `Export All` button in the Bulk-Calculate ribbon to bulk export the files.
+- The files will be available in the selected folder.
+
+### 7. Bulk import
+
+- Place all workbooks in a single folder.
+- Select the "Input/Output Folder" icon in the Bulk-Calculate ribbon.
+- Choose the folder containing the workbooks.
+- Click "Import Data" in the Bulk-Calculate ribbon to populate the "Summary" sheet with data from the workbooks.
 
 <!-- ## Contribution
 
@@ -89,4 +121,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgements
 
-Special thanks to all [contributors](https://github.com/engineered-in/Synthesizer/graphs/contributors) and users for their feedback and support.
+Special thanks to all [contributors](https://github.com/engineered-in/Bulk-Calculate/graphs/contributors) and users for their feedback and support.

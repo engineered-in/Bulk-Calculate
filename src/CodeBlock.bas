@@ -17,10 +17,91 @@ Sub destroyer()
 End Sub
 
 
+Function SheetExists(sheetName As String, wb As Workbook) As Boolean
+    On Error Resume Next
+    SheetExists = Not wb.Sheets(sheetName) Is Nothing
+    On Error GoTo 0
+End Function
+
+Sub importMapping()
+    Dim wb As Workbook
+    Dim ws As Worksheet
+    Dim prompt As Integer
+    Set wb = Nothing
+    On Error Resume Next ' Continue running the macro even if an error occurs
+    Set oFSO = CreateObject("Scripting.FileSystemObject") ' Create FileSystemObject
+    Set wb = Workbooks(oFSO.GetFileName(SETTINGS.Range("InputTemplate").text)) ' Try to set workbook if already open
+    If Err.Number <> 0 Then ' If error occurs (workbook not open), open the workbook
+        Err.Number = 0
+        Set wb = Workbooks.Open(SETTINGS.Range("InputTemplate").text, False, False)
+        If Err.Number <> 0 Then
+            Err.Number = 0
+            messageBox "Template File Does not Exist" & vbNewLine & vbNewLine & "Select a valid `Calc. Template Excel` file in the `Settings` section of `Bulk-Calculate` menu", "Missing Template File", vbCritical
+            Exit Sub
+        End If
+    End If
+    On Error GoTo 0
+    
+    If Not SheetExists(mappingSheetName, wb) Then
+        Exit Sub
+    Else
+        Set ws = wb.Worksheets(mappingSheetName)
+    End If
+    If ws.Range("Map[[Variable]:[Type]]").Rows.Count = 0 Then Exit Sub
+    
+    prompt = messageBox("Do you want to import the Mapping from the template file?", "Import Mapping from Template?", vbOKCancel)
+    If prompt = 1 Then
+        MAPPER.Range("Map").Rows.Delete
+        MAPPER.Range("Map").Cells(1, 1).Formula = "=ROW()-ROW(Map[#Headers])"
+        ws.Range("Map[[Variable]:[Type]]").Copy
+        MAPPER.Range("Map").Cells(1, 2).PasteSpecial Paste:=xlPasteValues
+        wb.Close
+        messageBox "Mapping data imported from Template file", "Mapping data import Completed", vbInformation
+    Else
+        Exit Sub
+    End If
+
+End Sub
+
 ' Subroutine to initialize the summary sheet
 Sub initSummary()
     Dim i, n As Long
+    Dim wb As Workbook
+    Dim ws As Worksheet
+    
     initializer
+    
+    Set wb = Nothing
+    On Error Resume Next ' Continue running the macro even if an error occurs
+    Set oFSO = CreateObject("Scripting.FileSystemObject") ' Create FileSystemObject
+    Set wb = Workbooks(oFSO.GetFileName(SETTINGS.Range("InputTemplate").text)) ' Try to set workbook if already open
+    If Err.Number <> 0 Then ' If error occurs (workbook not open), open the workbook
+        Err.Number = 0
+        Set wb = Workbooks.Open(SETTINGS.Range("InputTemplate").text, False, False)
+        If Err.Number <> 0 Then
+            Err.Number = 0
+            messageBox "Template File Does not Exist" & vbNewLine & vbNewLine & "Select a valid `Calc. Template Excel` file in the `Settings` section of `Bulk-Calculate` menu", "Missing Template File", vbCritical
+            Exit Sub
+        End If
+    End If
+    On Error GoTo 0
+    
+    If Not SheetExists(mappingSheetName, wb) Then
+        Set ws = wb.Sheets.Add(After:=wb.Sheets(wb.Sheets.Count))
+        ws.Name = mappingSheetName
+        ws.visible = xlSheetVeryHidden
+    Else
+        Set ws = wb.Worksheets(mappingSheetName)
+    End If
+    
+    ws.Cells.Clear
+    MAPPER.Range("Map[#All]").Copy
+    ws.Range("A1").PasteSpecial Paste:=xlPasteAll
+    ws.Range("Map").Validation.Delete
+    ws.visible = xlSheetVeryHidden
+    wb.Save
+    wb.Close
+    
     SUMMARY.Cells.Clear ' Clear the summary sheet
     n = MAPPER.Range("Map").Rows.Count ' Get the number of rows in the "Map" range in MAPPER sheet
 
@@ -54,6 +135,7 @@ Sub initSummary()
     
     ' Auto-fit columns in the "Summ" table
     SUMMARY.Range("Summ").Columns.EntireColumn.AutoFit
+    SUMMARY.Activate
     destroyer
 End Sub
 

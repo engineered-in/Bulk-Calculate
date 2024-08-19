@@ -10,10 +10,11 @@ Public Declare PtrSafe Sub CopyMemory Lib "kernel32" Alias "RtlMoveMemory" (ByRe
         destination As Any, ByRef source As Any, ByVal length As Long)
 
 Private myRibbon As IRibbonUI
-Public Const version As Double = 1.2
-Public Const readmeLink As String = "https://github.com/engineered-in/Synthesizer?tab=readme-ov-file#readme"
-Public Const changelogLink As String = "https://github.com/engineered-in/Synthesizer/blob/main/CHANGELOG.md"
-Public Const licenseLink As String = "https://github.com/engineered-in/Synthesizer?tab=MIT-1-ov-file#readme"
+Public Const version As Double = 1.3
+Public Const readmeLink As String = "https://github.com/engineered-in/Bulk-Calculate?tab=readme-ov-file#readme"
+Public Const changelogLink As String = "https://github.com/engineered-in/Bulk-Calculate/blob/main/CHANGELOG.md"
+Public Const licenseLink As String = "https://github.com/engineered-in/Bulk-Calculate?tab=MIT-1-ov-file#readme"
+Public Const mappingSheetName As String = "_Bulk-Calculate_Mapping_"
 Global latestVersion As Double
 
 Function GetRibbon(ByVal lRibbonPointer As LongPtr) As Object
@@ -43,7 +44,7 @@ Sub Ribbon_OnLoad(ByVal ribbon As Office.IRibbonUI)
     Set myRibbon = ribbon
     SETTINGS.Range("AZ1").Value = ObjPtr(ribbon)
     SUMMARY.Activate
-    myRibbon.ActivateTab ("Synthesizer")
+    myRibbon.ActivateTab ("Bulk-Calculate")
     latestVersion = CDbl(GetLatestTag())
     InvalidateControl "initiateUpdate"
     SETTINGS.visible = xlSheetVeryHidden
@@ -228,12 +229,12 @@ End Sub
 
 'Callback for help onAction
 Sub HelpVideo(control As IRibbonControl)
-    ThisWorkbook.FollowHyperlink "https://github.com/engineered-in/Synthesizer/wiki"
+    ThisWorkbook.FollowHyperlink "https://github.com/engineered-in/Bulk-Calculate/wiki"
 End Sub
 
 'Callback for feedback onAction
 Sub Feedback(control As IRibbonControl)
-    ThisWorkbook.FollowHyperlink "mailto:swarup+synthesizer@engineered.co.in?subject=Synthesizer%20-%20Feedback%20-%20reg.&body=Dear%20Swarup,%0D%0A%0D%0APlease%20find%20below%20my%20feedback%20on%20Synthesizer.xlsb%0D%0A%0D%0AFeedback [Positive/Negative]: %0D%0A%0D%0AComments:"
+    ThisWorkbook.FollowHyperlink "mailto:swarup+bulk-calculate@engineered.co.in?subject=Bulk-Calculate%20-%20Feedback%20-%20reg.&body=Dear%20Swarup,%0D%0A%0D%0APlease%20find%20below%20my%20feedback%20on%20Bulk-Calculate.xlsb%0D%0A%0D%0AFeedback [Positive/Negative]: %0D%0A%0D%0AComments:"
 End Sub
 
 'Callback for ImportData onAction
@@ -254,7 +255,7 @@ End Sub
 'Callback for initiateUpdate onAction
 Sub initiateUpdate(control As IRibbonControl)
     messageBox "A download window will be opened on your default browser.", "Download Version " & CStr(latestVersion), vbInformation
-    ThisWorkbook.FollowHyperlink "https://github.com/engineered-in/Synthesizer/releases/latest"
+    ThisWorkbook.FollowHyperlink "https://github.com/engineered-in/Bulk-Calculate/releases/latest"
 End Sub
 
 'Callback for openCalc onAction
@@ -298,7 +299,7 @@ Function GetLatestTag() As String
     Dim response As String
     Dim startPos As Integer, endPos As Integer
     
-    URL = "https://api.github.com/repos/engineered-in/Synthesizer/releases/latest"
+    URL = "https://api.github.com/repos/engineered-in/Bulk-Calculate/releases/latest"
     GetLatestTag = "1.0"
     
     On Error Resume Next

@@ -1,10 +1,10 @@
 VERSION 5.00
 Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} MappingWizard 
    Caption         =   "Synthesizer > Map Data Wizard"
-   ClientHeight    =   4305
+   ClientHeight    =   4308
    ClientLeft      =   120
-   ClientTop       =   465
-   ClientWidth     =   8190
+   ClientTop       =   468
+   ClientWidth     =   8196.001
    OleObjectBlob   =   "MappingWizard.frx":0000
    StartUpPosition =   1  'CenterOwner
 End
@@ -258,7 +258,7 @@ Private Sub UserForm_Initialize()
         Set wb = Workbooks.Open(SETTINGS.Range("InputTemplate").text, False, False)
         If Err.Number <> 0 Then
             Err.Number = 0
-            messageBox "Template File Does not Exist" & vbNewLine & "", "Missing Template File", vbCritical
+            messageBox "Template File Does not Exist" & vbNewLine & vbNewLine & "Select a valid `Calc. Template Excel` file in the `Settings` section of `Bulk-Calculate` menu", "Missing Template File", vbCritical
             Unload Me
         End If
     End If

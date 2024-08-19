@@ -5,7 +5,7 @@ Attribute VB_Name = "Standard"
 
 Function AppName() As String
     ' Return the application name.
-    AppName = "Synthesizer"
+    AppName = "Bulk-Calculate"
 End Function
 
 Public Function item_lookup(ByVal target As Variant, lkuprng As Range, ByVal lkupcol As Integer, Optional ByVal errval As Variant = "True") As Variant
