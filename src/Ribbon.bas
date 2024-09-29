@@ -3,14 +3,14 @@ Attribute VB_Name = "Ribbon"
 '
 ' https://www.spreadsheet1.com/office-excel-ribbon-imagemso-icons-gallery-page-01.html
 ' https://www.rondebruin.nl/win/s2/win003.htm
-' https://github.com/fernandreu/office-ribbonx-editor/releases/tag/v1.6
+' https://github.com/fernandreu/office-ribbonx-editor/releases/latest
 ' https://www.rondebruin.nl/win/s1/cdo.htm
 
 Public Declare PtrSafe Sub CopyMemory Lib "kernel32" Alias "RtlMoveMemory" (ByRef _
         destination As Any, ByRef source As Any, ByVal length As Long)
 
 Private myRibbon As IRibbonUI
-Public Const version As Double = 1.3
+Public Const version As Double = 1.4
 Public Const readmeLink As String = "https://github.com/engineered-in/Bulk-Calculate?tab=readme-ov-file#readme"
 Public Const changelogLink As String = "https://github.com/engineered-in/Bulk-Calculate/blob/main/CHANGELOG.md"
 Public Const licenseLink As String = "https://github.com/engineered-in/Bulk-Calculate?tab=MIT-1-ov-file#readme"
@@ -276,6 +276,7 @@ Sub UpdateCalculationTemplate(control As IRibbonControl, text As String)
         Set oFSO = CreateObject("Scripting.FileSystemObject")
         If oFSO.FileExists(text) Then
             SETTINGS.Range("InputTemplate").Value = text
+            importMapping
         End If
     End If
     InvalidateControl "calculationTemplate"
@@ -288,6 +289,7 @@ Sub browseCalculationTemplate(control As IRibbonControl)
     filePath = FileSelect("Select the Template Excel File...", SETTINGS.Range("InputTemplate").Value, "Excel Files", "*.xls;*.xlsx;*.xlsb;*.xlsm")
     If oFSO.FileExists(filePath) Then
         SETTINGS.Range("InputTemplate").Value = filePath
+        importMapping
         InvalidateControl "calculationTemplate"
     End If
 

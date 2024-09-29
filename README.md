@@ -9,13 +9,13 @@
 ![GitHub All Releases](https://img.shields.io/github/downloads/engineered-in/Bulk-Calculate/total)
 
 ---
-[Download Bulk-Calculate](https://github.com/engineered-in/Bulk-Calculate/releases/latest/download/Bulk-Calculate.xlsb)
-</a> &nbsp; | &nbsp;
+[Download Bulk-Calculate](https://github.com/engineered-in/Bulk-Calculate/releases/latest/download/Bulk-Calculate.xlsb)&nbsp; | &nbsp;
+[Walkthrough](https://view.genially.com/66ef09bc2d8d928848f09bb2/interactive-content-bulk-calculate-getting-started-guide) &nbsp; | &nbsp;
 <a href="mailto:swarup+bulk-calculate@engineered.co.in?subject=Bulk-Calculate%20-%20Feedback%20-%20reg.&body=Dear%20Swarup,%0D%0A%0D%0APlease%20find%20below%20my%20feedback%20on%20Bulk-Calculate.xlsb%0D%0A%0D%0AFeedback [Positive/Negative]: %0D%0A%0D%0AComments:"  target="_blank">Give Feedback</a> &nbsp; | &nbsp;
 <a href="https://github.com/sponsors/engineered-in" target="_blank">Sponsor Engineered-In</a>
 
 ---
-> ### Stop working with files and start working with data
+> ### Work with data, not files.
 
 ## What is Bulk-Calculate?
 
@@ -26,6 +26,12 @@ Bulk-Calculate is a powerful Excel spreadsheet utility that helps you streamline
       ✅ Manage multiple calculation files with ease
       ✅ Automate repetitive tasks and save hours of time
       ✅ Get a bird's eye view of your calculation inputs and outputs
+
+![image](https://github.com/user-attachments/assets/4e4416f5-cab9-4526-9094-eabf1e398877)
+
+![image](https://github.com/user-attachments/assets/02f6b1df-57a7-430e-9c71-51ddd0855247)
+
+
 
 ### Are you tired of
 
@@ -65,6 +71,8 @@ It is much like a feeder service in a metro network providing last-mile connecti
 1. Download the <a href="https://github.com/engineered-in/Bulk-Calculate/releases/latest/download/Bulk-Calculate.xlsb" target="_blank">Bulk-Calculate.xlsb</a> to a [Trusted Location](https://github.com/engineered-in/Bulk-Calculate/wiki/Excel-Trusted-Location).
 2. Open the file in Microsoft Excel.
 3. Enable macros when prompted to ensure all functionalities work correctly.
+
+https://youtu.be/J667nX5zhAE?si=wDIuCrMlaKiS_-37
 
 ## How to Use?
 
