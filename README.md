@@ -1,47 +1,63 @@
-# Bulk-Calculate
 
-![GitHub Release](https://img.shields.io/github/v/release/engineered-in/Bulk-Calculate)
-![GitHub Stars](https://img.shields.io/github/stars/engineered-in/Bulk-Calculate?style=social)
-[![Changelog](https://img.shields.io/badge/Changelog-📄-blue)](https://github.com/engineered-in/Bulk-Calculate/blob/main/CHANGELOG.md)
-![GitHub Issues](https://img.shields.io/github/issues/engineered-in/Bulk-Calculate)
-![GitHub Forks](https://img.shields.io/github/forks/engineered-in/Bulk-Calculate)
-![GitHub License](https://img.shields.io/github/license/engineered-in/Bulk-Calculate)
-![GitHub All Releases](https://img.shields.io/github/downloads/engineered-in/Bulk-Calculate/total)
+# Bulk-Calculate&nbsp;<img src="https://github.com/user-attachments/assets/cfa7e6b8-202f-4ba0-b48e-bafe7a3d5cf6" height="26px">
 
----
+<i>Work with data, not files.</i>
+
 [Download Bulk-Calculate](https://github.com/engineered-in/Bulk-Calculate/releases/latest/download/Bulk-Calculate.xlsb)&nbsp; | &nbsp;
 [Walkthrough](https://view.genially.com/66ef09bc2d8d928848f09bb2/interactive-content-bulk-calculate-getting-started-guide) &nbsp; | &nbsp;
 <a href="mailto:swarup+bulk-calculate@engineered.co.in?subject=Bulk-Calculate%20-%20Feedback%20-%20reg.&body=Dear%20Swarup,%0D%0A%0D%0APlease%20find%20below%20my%20feedback%20on%20Bulk-Calculate.xlsb%0D%0A%0D%0AFeedback [Positive/Negative]: %0D%0A%0D%0AComments:"  target="_blank">Give Feedback</a> &nbsp; | &nbsp;
 <a href="https://github.com/sponsors/engineered-in" target="_blank">Sponsor Engineered-In</a>
 
----
-> ### Work with data, not files.
+![GitHub Release](https://img.shields.io/github/v/release/engineered-in/Bulk-Calculate)&nbsp;![GitHub Stars](https://img.shields.io/github/stars/engineered-in/Bulk-Calculate?style=social)&nbsp;[![Changelog](https://img.shields.io/badge/Changelog-📄-blue)](https://github.com/engineered-in/Bulk-Calculate/blob/main/CHANGELOG.md)&nbsp;![GitHub Issues](https://img.shields.io/github/issues/engineered-in/Bulk-Calculate)&nbsp;![GitHub Forks](https://img.shields.io/github/forks/engineered-in/Bulk-Calculate)&nbsp;![GitHub License](https://img.shields.io/github/license/engineered-in/Bulk-Calculate)&nbsp;![GitHub All Releases](https://img.shields.io/github/downloads/engineered-in/Bulk-Calculate/total)&nbsp;
 
-## What is Bulk-Calculate?
+## What is Bulk Calculate?
 
-Bulk-Calculate is a powerful Excel spreadsheet utility that helps you streamline your calculation workflow.
+**Bulk-Calculate** is a tool designed to streamline repetitive, **template**-based engineering calculations by centralizing inputs and outputs in a single summary table. 
 
-    With its intuitive interface and advanced features, you can:
+### Key Benefits:
+- **Automation**: No need to manage multiple files for each calculation.
+- **Error Reduction**: Decreases data entry errors.
+- **Bulk Operations**: Allows for bulk calculations, exports, and imports.
 
-      ✅ Manage multiple calculation files with ease
-      ✅ Automate repetitive tasks and save hours of time
-      ✅ Get a bird's eye view of your calculation inputs and outputs
+### Why Use Bulk Calculate?
+- **Saves Time**: Automates repetitive tasks, letting you focus on what matters.
+- **Enhances Productivity**: Reduces manual effort and data errors.
+- **Data Overview**: Provides a clear summary of project calculations.
 
-![image](https://github.com/user-attachments/assets/4e4416f5-cab9-4526-9094-eabf1e398877)
+Ideal for organizations transitioning to a **data-driven workflow** using Excel.
 
-![image](https://github.com/user-attachments/assets/02f6b1df-57a7-430e-9c71-51ddd0855247)
+## What Problem Does It Solve?
+
+In many engineering projects, template-driven calculations are routine, such as the design of structural elements like beams. 
+Typically, these calculations are done using a standard, validated Excel file (referred to as a "**Template**") that is **reused** for **multiple calculations** across projects.
+While the calculation process remains consistent across different projects, only project-specific details (e.g., client name, logo) change.
 
 
+However, the conventional approach of creating separate Excel files for each calculation leads to several issues:
 
-### Are you tired of
+&nbsp;&nbsp;❌ **File Multiplication** - Managing multiple similar files and updating each one manually is a time drain.  
+&nbsp;&nbsp;❌ **Data Accuracy Risks** - Errors can easily occur when manually entering or pasting data across multiple similar looking files.  
+&nbsp;&nbsp;❌ **Data Entry Overload** - Excessive time and effort is spent on data entry instead of engineering innovation.   
+&nbsp;&nbsp;❌ **Inefficient Data Extraction** - Summarizing results requires manually opening and extracting data from each file one-by-one.  
+&nbsp;&nbsp;❌ **Time-consuming Updates** - Any changes to the template must be applied manually to every file.  
+&nbsp;&nbsp;❌ **Losing Sight of the Big Picture** - The scattered nature of data across files makes it difficult to see the overall picture.   
+&nbsp;&nbsp;❌ **Lack of Data Visibility** - There's no centralized view of all the calculations, making it difficult to track or reference past work.  
+  
 
-- Repetitive calculations that eat away your time?
-- Spending more time on data entry than on Optimization?
-- Finding errors and inconsistencies across similar calculations?
-- Missing out on valuable insights due to lack of benchmarking?
-- Losing sight of the big picture, with data scattered across multiple files?
+For example, if I need to check if a similar beam design was performed in another project, I must search through numerous files, which is difficult and inefficient.
 
-### Key Features
+### How Does It Solve the Problem?
+
+A more efficient solution would be a centralized system that records all inputs and outputs from each calculation in a single summary table, with each row representing a calculation file.
+This provides:
+
+&nbsp;&nbsp;✅ Clear visibility of data  
+&nbsp;&nbsp;✅ Easier access to past calculations  
+&nbsp;&nbsp;✅ More efficient updates across projects  
+&nbsp;&nbsp;✅ Ability to export the summary table to spreadsheets or PDFs, preserving the look of the conventional method 
+
+
+## Key Features
 
 - **Template-based calculations**: Use any of your calculation file as a template
 - **Mapping Wizard**: Easily map calculation input and output cells
@@ -50,21 +66,6 @@ Bulk-Calculate is a powerful Excel spreadsheet utility that helps you streamline
 - **Bulk export**: Export individual calculation spreadsheets or PDF files from Summary table
 - **Bulk import**: Import data from existing calculation spreadsheets into a Summary table
 
-### Why Choose Bulk-Calculate?
-
-- **Save time**: Automate repetitive tasks and focus on what matters
-- **Boost productivity**: Get more done in less time with Bulk-Calculate
-- **Increase accuracy**: Reduce errors and inconsistencies across calculation files
-- **Simplify data management**: Keep track of multiple calculation files and outputs with ease
-
-### Transitioning to a Data-Driven Organization?
-
-If your organization is transitioning to a data-driven approach, think of **Bulk-Calculate** as the essential utility that ensures smooth and reliable way to your end users to work with data.
-
-It allows your users to work with data using a very familiar excel interface.
-
-It is much like a feeder service in a metro network providing last-mile connectivity.
-
 
 ## Download
 
@@ -72,7 +73,7 @@ It is much like a feeder service in a metro network providing last-mile connecti
 2. Open the file in Microsoft Excel.
 3. Enable macros when prompted to ensure all functionalities work correctly.
 
-https://youtu.be/J667nX5zhAE?si=wDIuCrMlaKiS_-37
+[Demo Video Playlist](https://www.youtube.com/watch?v=J667nX5zhAE&list=PLEv5wGuO-nlCG0vGYjktEjpwVfhTBWX8P)
 
 ## How to Use?
 
@@ -90,15 +91,15 @@ https://youtu.be/J667nX5zhAE?si=wDIuCrMlaKiS_-37
 - Go to the "Summary" sheet.
 - Click `Generate Summary Table` in the Bulk-Calculate ribbon. All variables defined in the "Mapper" sheet will appear as headers.
 
-### 4. Fill the Summary table with your inputs
+### 4. Fill the Summary Table with your Inputs
 
 - Copy and paste all the input variable information into the respective columns in the "Summary" sheet.
 
-### 5. Bulk calculate outputs
+### 5. Bulk Calculate
 
 - Click on the `Calculate All` button to perform bulk calculation on all the records of the Summary Table
 
-### 6. Bulk export
+### 6. Bulk Export
 
 - Select the `Input/Output Folder` icon in the Bulk-Calculate ribbon.
 - Choose a folder where you want the files to be saved.
@@ -106,7 +107,7 @@ https://youtu.be/J667nX5zhAE?si=wDIuCrMlaKiS_-37
 - Click the `Export All` button in the Bulk-Calculate ribbon to bulk export the files.
 - The files will be available in the selected folder.
 
-### 7. Bulk import
+### 7. Bulk Import
 
 - Place all workbooks in a single folder.
 - Select the "Input/Output Folder" icon in the Bulk-Calculate ribbon.
@@ -122,6 +123,56 @@ Contributions are welcome! Please follow these steps to contribute:
 3. Commit your changes (`git commit -m 'Add some feature'`).
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Open a pull request. -->
+
+## Frequently Asked Questions
+
+### Is Bulk-Calculate free?
+
+Yes, Bulk-Calculate is completely free and open-source. You can use, view the code, and even modify it to suit your needs without any cost (except for the Microsoft Excel license ofcourse).
+
+### Why should I trust Bulk-Calculate?
+
+Bulk-Calculate relies on macros, which are disabled by default in Excel unless you trust the file or its publisher. As an open-source project, the VBA code is fully transparent, allowing anyone to review it for vulnerabilities. Only verified maintainers (using GPG keys) can update the source code and release new versions.
+
+### Is it valuable even though it's free?
+
+Absolutely! The goal of Bulk-Calculate is **collective progress**, not profit. Pricing it based on its value would make it inaccessible to many. Think of it like air—free, but invaluable.
+
+### Do I need to know VBA or coding to use Bulk-Calculate?
+
+No coding or VBA knowledge is required. Bulk-Calculate has a user-friendly interface that allows you to map input and output cells using the Map Data Wizard and perform bulk calculations with just a few clicks.
+
+### Can I use my own Excel file with Bulk-Calculate?
+
+Yes, you can use any standalone Excel file (without external references) as a template in Bulk-Calculate. Simply map your input and output cells using the Map Data Wizard.
+
+### What happens if my Excel template changes?
+
+If your template changes, you can easily update the mappings by re-running the Map Data Wizard. Bulk-Calculate will adapt to the new structure and ensure all calculations are performed correctly.
+
+### Can Bulk-Calculate handle large datasets?
+
+Yes, Bulk-Calculate processes data sequentially, one datapoint at a time. While it can handle large datasets, calculations and exports may take a bit longer for larger volumes of data.
+
+### Can Bulk-Calculate import data from files with different structures?
+
+No, Bulk-Calculate requires that all files used for bulk import have the same structure. The input and output cells need to be mapped consistently across all files for successful data import.
+
+### Does Bulk-Calculate work with older versions of Excel?
+
+Bulk-Calculate is compatible with Excel 2013 and later. However, for the best experience and performance, it's recommended to use the latest version of Excel.
+
+### Can I use Bulk-Calculate for non-engineering projects?
+
+Yes! While Bulk-Calculate is designed for engineering calculations, it can be applied to any repetitive data-driven task. As long as you can map the input and output cells, it will work for your needs, whether in finance, research, or other fields.
+
+### Can I suggest improvements to Bulk-Calculate?
+
+Yes, feel free to share ideas for improvement by using the Feedback button in the Bulk-Calculate ribbon menu. The maintainers will review your suggestion and prioritize it accordingly. You can also fast-track development by sponsoring the project <a href="https://github.com/sponsors/engineered-in" target="_blank">here</a>.
+
+### Can you create similar tools for me?
+
+For custom development requests, please reach out through our <a href="https://www.linkedin.com/company/engineeredin/" target="_blank">LinkedIn Page</a>. Avoid using the Feedback button for these inquiries.
 
 ## License
 
