@@ -126,53 +126,65 @@ Contributions are welcome! Please follow these steps to contribute:
 
 ## Frequently Asked Questions
 
-### Is Bulk-Calculate free?
+<details><summary>Is Bulk-Calculate free?</summary>
 
 Yes, Bulk-Calculate is completely free and open-source. You can use, view the code, and even modify it to suit your needs without any cost (except for the Microsoft Excel license ofcourse).
+</details>
 
-### Why should I trust Bulk-Calculate?
+<details><summary>Why should I trust Bulk-Calculate?</summary>
 
 Bulk-Calculate relies on macros, which are disabled by default in Excel unless you trust the file or its publisher. As an open-source project, the VBA code is fully transparent, allowing anyone to review it for vulnerabilities. Only verified maintainers (using GPG keys) can update the source code and release new versions.
+</details>
 
-### Is it valuable even though it's free?
+<details><summary>Is it valuable even though it's free?</summary>
 
 Absolutely! The goal of Bulk-Calculate is **collective progress**, not profit. Pricing it based on its value would make it inaccessible to many. Think of it like air—free, but invaluable.
+</details>
 
-### Do I need to know VBA or coding to use Bulk-Calculate?
+<details><summary>Do I need to know VBA or coding to use Bulk-Calculate?</summary>
 
 No coding or VBA knowledge is required. Bulk-Calculate has a user-friendly interface that allows you to map input and output cells using the Map Data Wizard and perform bulk calculations with just a few clicks.
+</details>
 
-### Can I use my own Excel file with Bulk-Calculate?
+<details><summary>Can I use my own Excel file with Bulk-Calculate?</summary>
 
 Yes, you can use any standalone Excel file (without external references) as a template in Bulk-Calculate. Simply map your input and output cells using the Map Data Wizard.
+</details>
 
-### What happens if my Excel template changes?
+<details><summary>What happens if my Excel template changes?</summary>
 
 If your template changes, you can easily update the mappings by re-running the Map Data Wizard. Bulk-Calculate will adapt to the new structure and ensure all calculations are performed correctly.
+</details>
 
-### Can Bulk-Calculate handle large datasets?
+<details><summary>Can Bulk-Calculate handle large datasets?</summary>
 
 Yes, Bulk-Calculate processes data sequentially, one datapoint at a time. While it can handle large datasets, calculations and exports may take a bit longer for larger volumes of data.
+</details>
 
-### Can Bulk-Calculate import data from files with different structures?
+<details><summary>Can Bulk-Calculate import data from files with different structures?</summary>
 
 No, Bulk-Calculate requires that all files used for bulk import have the same structure. The input and output cells need to be mapped consistently across all files for successful data import.
+</details>
 
-### Does Bulk-Calculate work with older versions of Excel?
+<details><summary>Does Bulk-Calculate work with older versions of Excel?</summary>
 
 Bulk-Calculate is compatible with Excel 2013 and later. However, for the best experience and performance, it's recommended to use the latest version of Excel.
+</details>
 
-### Can I use Bulk-Calculate for non-engineering projects?
+<details><summary>Can I use Bulk-Calculate for non-engineering projects?</summary>
 
 Yes! While Bulk-Calculate is designed for engineering calculations, it can be applied to any repetitive data-driven task. As long as you can map the input and output cells, it will work for your needs, whether in finance, research, or other fields.
+</details>
 
-### Can I suggest improvements to Bulk-Calculate?
+<details><summary>Can I suggest improvements to Bulk-Calculate?</summary>
 
 Yes, feel free to share ideas for improvement by using the Feedback button in the Bulk-Calculate ribbon menu. The maintainers will review your suggestion and prioritize it accordingly. You can also fast-track development by sponsoring the project <a href="https://github.com/sponsors/engineered-in" target="_blank">here</a>.
+</details>
 
-### Can you create similar tools for me?
+<details><summary>Can you create similar tools for me?</summary>
 
 For custom development requests, please reach out through our <a href="https://www.linkedin.com/company/engineeredin/" target="_blank">LinkedIn Page</a>. Avoid using the Feedback button for these inquiries.
+</details>
 
 ## License
 
