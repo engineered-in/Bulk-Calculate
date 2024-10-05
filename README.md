@@ -14,17 +14,7 @@
 
 **Bulk-Calculate** is a tool designed to streamline repetitive, **template**-based engineering calculations by centralizing inputs and outputs in a single summary table. 
 
-### Key Benefits:
-- **Automation**: No need to manage multiple files for each calculation.
-- **Error Reduction**: Decreases data entry errors.
-- **Bulk Operations**: Allows for bulk calculations, exports, and imports.
-
-### Why Use Bulk Calculate?
-- **Saves Time**: Automates repetitive tasks, letting you focus on what matters.
-- **Enhances Productivity**: Reduces manual effort and data errors.
-- **Data Overview**: Provides a clear summary of project calculations.
-
-Ideal for organizations transitioning to a **data-driven workflow** using Excel.
+Ideal solution for organizations transitioning to a **data-driven workflow** using Excel.
 
 ## What Problem Does It Solve?
 
