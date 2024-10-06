@@ -4,7 +4,7 @@
 <i>Work with data, not files.</i>
 
 [Download Bulk-Calculate](https://github.com/engineered-in/Bulk-Calculate/releases/latest/download/Bulk-Calculate.xlsb)&nbsp; | &nbsp;
-[Walkthrough](https://view.genially.com/66ef09bc2d8d928848f09bb2/interactive-content-bulk-calculate-getting-started-guide) &nbsp; | &nbsp;
+[Documentation](https://engineered-in.github.io/Bulk-Calculate/) &nbsp; | &nbsp;
 <a href="mailto:swarup+bulk-calculate@engineered.co.in?subject=Bulk-Calculate%20-%20Feedback%20-%20reg.&body=Dear%20Swarup,%0D%0A%0D%0APlease%20find%20below%20my%20feedback%20on%20Bulk-Calculate.xlsb%0D%0A%0D%0AFeedback [Positive/Negative]: %0D%0A%0D%0AComments:"  target="_blank">Give Feedback</a> &nbsp; | &nbsp;
 <a href="https://github.com/sponsors/engineered-in" target="_blank">Sponsor Engineered-In</a>
 
@@ -12,9 +12,9 @@
 
 ## What is Bulk Calculate?
 
-**Bulk-Calculate** is a tool designed to streamline repetitive, **template**-based engineering calculations by centralizing inputs and outputs in a single summary table. 
+**Bulk-Calculate** is a tool built to simplify repetitive, **template**-based engineering calculations. It centralizes all inputs and outputs in a single summary table, where each row corresponds to a specific calculation file. 
 
-Ideal solution for organizations transitioning to a **data-driven workflow** using Excel.
+It’s an ideal solution for organizations moving towards a **data-driven workflow** using Excel.
 
 ## What Problem Does It Solve?
 
@@ -57,39 +57,37 @@ This provides:
 - **Bulk import**: Import data from existing calculation spreadsheets into a Summary table
 
 
-## Download
+## Getting Started
 
-1. Download the <a href="https://github.com/engineered-in/Bulk-Calculate/releases/latest/download/Bulk-Calculate.xlsb" target="_blank">Bulk-Calculate.xlsb</a> to a [Trusted Location](https://github.com/engineered-in/Bulk-Calculate/wiki/Excel-Trusted-Location).
-2. Open the file in Microsoft Excel.
-3. Enable macros when prompted to ensure all functionalities work correctly.
+### 1. How to Download
 
-[Demo Video Playlist](https://www.youtube.com/watch?v=J667nX5zhAE&list=PLEv5wGuO-nlCG0vGYjktEjpwVfhTBWX8P)
+- Download the <a href="https://github.com/engineered-in/Bulk-Calculate/releases/latest/download/Bulk-Calculate.xlsb" target="_blank">Bulk-Calculate.xlsb</a> to a [Trusted Location](https://github.com/engineered-in/Bulk-Calculate/wiki/Excel-Trusted-Location).
+- Open the file in Microsoft Excel.
+- Enable macros when prompted to ensure all functionalities work correctly.
 
-## How to Use?
+[How to Download | 2 minute detailed Youtube Video](https://www.youtube.com/watch?v=J667nX5zhAE&list=PLEv5wGuO-nlCG0vGYjktEjpwVfhTBWX8P)
 
-### 1. Selecting template spreadsheet
+
+### 2. Mapping Template to Data
 
 - Open the `Bulk-Calculate.xlsb` file in Excel. A new ribbon "Bulk-Calculate" will appear.
 - Click on `Select Template` button from the Bulk-Calculate ribbon (available in Map Data group)
-
-### 2. Interactively map your template using Map Data Wizard
-
 - Use the `Map Data Wizard` to interactively map all the input and output variables from your selected Template File
-
-### 3. Generate Summary Table
-
 - Go to the "Summary" sheet.
 - Click `Generate Summary Table` in the Bulk-Calculate ribbon. All variables defined in the "Mapper" sheet will appear as headers.
 
-### 4. Fill the Summary Table with your Inputs
+[How to Map Template to Data | 4 minute detailed Youtube Video](https://www.youtube.com/watch?v=IVN0SbynDFw&list=PLEv5wGuO-nlCG0vGYjktEjpwVfhTBWX8P&index=2)
+
+
+### 3. Work with Data
 
 - Copy and paste all the input variable information into the respective columns in the "Summary" sheet.
-
-### 5. Bulk Calculate
-
 - Click on the `Calculate All` button to perform bulk calculation on all the records of the Summary Table
 
-### 6. Bulk Export
+[How to Work with Data | 3 minute detailed Youtube Video](https://www.youtube.com/watch?v=9gzMJyAHyzU&list=PLEv5wGuO-nlCG0vGYjktEjpwVfhTBWX8P&index=3)
+
+
+### 4. Bulk Export
 
 - Select the `Input/Output Folder` icon in the Bulk-Calculate ribbon.
 - Choose a folder where you want the files to be saved.
@@ -97,12 +95,18 @@ This provides:
 - Click the `Export All` button in the Bulk-Calculate ribbon to bulk export the files.
 - The files will be available in the selected folder.
 
-### 7. Bulk Import
+[How to Bulk Export | 2 minute detailed Youtube Video](https://www.youtube.com/watch?v=J3Ugtd3kDks&list=PLEv5wGuO-nlCG0vGYjktEjpwVfhTBWX8P&index=4)
+
+### 5. Bulk Import
 
 - Place all workbooks in a single folder.
 - Select the "Input/Output Folder" icon in the Bulk-Calculate ribbon.
 - Choose the folder containing the workbooks.
 - Click "Import Data" in the Bulk-Calculate ribbon to populate the "Summary" sheet with data from the workbooks.
+
+> **Note**: Bulk Import works only if all workbooks follow the same template, meaning they **must comply** with the **specified data mapping**.
+
+[How to Bulk Import | 3 minute detailed Youtube Video](https://www.youtube.com/watch?v=DmgdLhYtYg4&list=PLEv5wGuO-nlCG0vGYjktEjpwVfhTBWX8P&index=5)
 
 <!-- ## Contribution
 
