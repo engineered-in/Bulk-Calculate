@@ -10,51 +10,49 @@
 
 ![GitHub Release](https://img.shields.io/github/v/release/engineered-in/Bulk-Calculate)&nbsp;![GitHub Stars](https://img.shields.io/github/stars/engineered-in/Bulk-Calculate?style=social)&nbsp;[![Changelog](https://img.shields.io/badge/Changelog-📄-blue)](https://github.com/engineered-in/Bulk-Calculate/blob/main/CHANGELOG.md)&nbsp;![GitHub Issues](https://img.shields.io/github/issues/engineered-in/Bulk-Calculate)&nbsp;![GitHub Forks](https://img.shields.io/github/forks/engineered-in/Bulk-Calculate)&nbsp;![GitHub License](https://img.shields.io/github/license/engineered-in/Bulk-Calculate)&nbsp;![GitHub All Releases](https://img.shields.io/github/downloads/engineered-in/Bulk-Calculate/total)&nbsp;
 
-## What is Bulk Calculate?
+## Overview
 
-**Bulk-Calculate** is a tool built to simplify repetitive, **template**-based engineering calculations. It centralizes all inputs and outputs in a single summary table, where each row corresponds to a specific calculation file. 
+**Bulk-Calculate** is an Excel utility designed to streamline **repetitive**, **template**-based engineering calculations. By centralizing inputs and outputs into a **single summary table**, it helps engineers focus on their work instead of managing countless files. Ideal for civil, mechanical, chemical, and electrical engineers, Bulk-Calculate makes engineering projects more **data-driven** and **efficient**.
 
-It’s an ideal solution for organizations moving towards a **data-driven workflow** using Excel.
 
-## What Problem Does It Solve?
+## The Problem: Pain Points in Engineering Calculations
 
-In many engineering projects, template-driven calculations are routine, such as the design of structural elements like beams. 
-Typically, these calculations are done using a standard, validated Excel file (referred to as a "**Template**") that is **reused** for **multiple calculations** across projects.
-While the calculation process remains consistent across different projects, only project-specific details (e.g., client name, logo) change.
+Many engineering disciplines rely heavily on standardized templates for calculations—like connection design in structural engineering or equipment sizing in mechanical engineering. Typically, these calculations are done in a validated Excel file used **repeatedly** for different projects, with project-specific information (like client name, logo) adjusted as needed.
 
 
 However, the conventional approach of creating separate Excel files for each calculation leads to several issues:
 
-&nbsp;&nbsp;❌ **File Multiplication** - Managing multiple similar files and updating each one manually is a time drain.  
-&nbsp;&nbsp;❌ **Data Accuracy Risks** - Errors can easily occur when manually entering or pasting data across multiple similar looking files.  
-&nbsp;&nbsp;❌ **Data Entry Overload** - Excessive time and effort is spent on data entry instead of engineering innovation.   
-&nbsp;&nbsp;❌ **Inefficient Data Extraction** - Summarizing results requires manually opening and extracting data from each file one-by-one.  
-&nbsp;&nbsp;❌ **Time-consuming Updates** - Any changes to the template must be applied manually to every file.  
-&nbsp;&nbsp;❌ **Losing Sight of the Big Picture** - The scattered nature of data across files makes it difficult to see the overall picture.   
-&nbsp;&nbsp;❌ **Lack of Data Visibility** - There's no centralized view of all the calculations, making it difficult to track or reference past work.  
+&nbsp;&nbsp;❌ **File Multiplication** - Engineers end up with dozens or hundreds of similar files, making updates and management tedious.  
+&nbsp;&nbsp;❌ **Data Entry Errors** - Copying data across multiple files increases the risk of errors, compromising calculation accuracy.  
+&nbsp;&nbsp;❌ **Scattered Data** - Data is dispersed across multiple files, making it hard to track calculations and find past work.  
+&nbsp;&nbsp;❌ **Manual Updates** - Changes to a template need to be repeated manually across every instance, which is time-consuming.  
+&nbsp;&nbsp;❌ **Inefficient Data Summarization** - Summarizing results from multiple files often requires opening and processing each file individually.   
+
   
+These issues lead to wasted time, increased potential for mistakes, excessive time and effort spent on **data entry** instead of **engineering innovation**, and make it difficult to see the bigger picture across projects.
 
-For example, if I need to check if a similar beam design was performed in another project, I must search through numerous files, which is difficult and inefficient.
+For example, imagine needing to verify if a similar design was performed in another project. In the traditional approach, you would have to manually open and search through numerous Excel files scattered across your system. Each file might have different naming conventions or be stored in different folders, making it time-consuming and frustrating to locate the relevant information, which may have even been created by a colleague who has since left the company. This inefficient process not only wastes valuable engineering hours but also risks missing critical design insights due to the sheer volume of files to manage.
 
-### How Does It Solve the Problem?
+### The Solution: How Bulk-Calculate Helps
 
-A more efficient solution would be a centralized system that records all inputs and outputs from each calculation in a single summary table, with each row representing a calculation file.
-This provides:
+**Bulk-Calculate** addresses these challenges by creating a centralized data-driven workflow: a single summary table, with each row representing a calculation file,
 
-&nbsp;&nbsp;✅ Clear visibility of data  
-&nbsp;&nbsp;✅ Easier access to past calculations  
-&nbsp;&nbsp;✅ More efficient updates across projects  
-&nbsp;&nbsp;✅ Ability to export the summary table to spreadsheets or PDFs, preserving the look of the conventional method 
+&nbsp;&nbsp;✅ **Single Source of Truth** - All calculation data is recorded in a single summary table, providing a clear overview.  
+&nbsp;&nbsp;✅ **Minimized File Handling** - No more handling multiple calculation files—inputs and outputs are updated directly in the summary.  
+&nbsp;&nbsp;✅ **Efficient Bulk Operations** - Perform calculations for multiple entries in one go, saving time and reducing human error.  
+&nbsp;&nbsp;✅ **Data Visibility** - Easily review, compare, and reuse calculations across different projects.  
+&nbsp;&nbsp;✅ **Bulk Export and Import** - Export results into separate files or PDFs, or import existing calculations into the summary table—all without sacrificing the familiar Excel environment.  
 
+By **consolidating data** and reducing file clutter, Bulk-Calculate helps engineers focus on **engineering work**, rather than file management.
 
 ## Key Features
 
 - **Template-based calculations**: Use any of your calculation file as a template
-- **Mapping Wizard**: Easily map calculation input and output cells
-- **Summary table**: Get a clear view of your calculation inputs and outputs
-- **Bulk calculation**: Perform multiple calculations at once with a single click
-- **Bulk export**: Export individual calculation spreadsheets or PDF files from Summary table
-- **Bulk import**: Import data from existing calculation spreadsheets into a Summary table
+- **Mapping Wizard**: Easily map calculation input and output cells from your template
+- **Summary table**: Get a comprehensive overview of all calculation inputs and outputs in one place
+- **Bulk calculation**: Perform calculations for multiple scenarios/data-points with a single click  
+- **Bulk export**: Export individual calculation spreadsheets or PDF files directly from the Summary table  
+- **Bulk import**: Import data from existing calculation spreadsheets into Bulk-Calculate.
 
 
 ## Getting Started
@@ -65,48 +63,46 @@ This provides:
 - Open the file in Microsoft Excel.
 - Enable macros when prompted to ensure all functionalities work correctly.
 
-[How to Download | 2 minute detailed Youtube Video](https://www.youtube.com/watch?v=J667nX5zhAE&list=PLEv5wGuO-nlCG0vGYjktEjpwVfhTBWX8P)
+[How to Download | 2 minute YouTube Video](https://www.youtube.com/watch?v=J667nX5zhAE&list=PLEv5wGuO-nlCG0vGYjktEjpwVfhTBWX8P)
 
 
 ### 2. Mapping Template to Data
 
 - Open the `Bulk-Calculate.xlsb` file in Excel. A new ribbon "Bulk-Calculate" will appear.
-- Click on `Select Template` button from the Bulk-Calculate ribbon (available in Map Data group)
-- Use the `Map Data Wizard` to interactively map all the input and output variables from your selected Template File
-- Go to the "Summary" sheet.
-- Click `Generate Summary Table` in the Bulk-Calculate ribbon. All variables defined in the "Mapper" sheet will appear as headers.
+- Click on `Select Template` button from the Bulk-Calculate ribbon (in Map Data group).
+- Use the `Map Data Wizard` to map the input and output variables interactively.
+- Go to the "Summary" sheet and click `Generate Summary Table` to see all mapped variables as headers.
 
-[How to Map Template to Data | 4 minute detailed Youtube Video](https://www.youtube.com/watch?v=IVN0SbynDFw&list=PLEv5wGuO-nlCG0vGYjktEjpwVfhTBWX8P&index=2)
+[How to Map Template to Data | 4 minute YouTube Video](https://www.youtube.com/watch?v=IVN0SbynDFw&list=PLEv5wGuO-nlCG0vGYjktEjpwVfhTBWX8P&index=2)
 
 
 ### 3. Work with Data
 
-- Copy and paste all the input variable information into the respective columns in the "Summary" sheet.
-- Click on the `Calculate All` button to perform bulk calculation on all the records of the Summary Table
+- Copy and paste all the input information into the respective columns in the "Summary" sheet.
+- Click on the `Calculate All` button to perform bulk calculation for all rows.
 
-[How to Work with Data | 3 minute detailed Youtube Video](https://www.youtube.com/watch?v=9gzMJyAHyzU&list=PLEv5wGuO-nlCG0vGYjktEjpwVfhTBWX8P&index=3)
+[How to Work with Data | 3 minute YouTube Video](https://www.youtube.com/watch?v=9gzMJyAHyzU&list=PLEv5wGuO-nlCG0vGYjktEjpwVfhTBWX8P&index=3)
 
 
 ### 4. Bulk Export
 
 - Select the `Input/Output Folder` icon in the Bulk-Calculate ribbon.
-- Choose a folder where you want the files to be saved.
+- Choose a folder for saving files.
 - Choose the file format (e.g., pdf, xlsx) in the "Export" dropdown.
-- Click the `Export All` button in the Bulk-Calculate ribbon to bulk export the files.
-- The files will be available in the selected folder.
+- Click `Export All` button to bulk export the files.
 
-[How to Bulk Export | 2 minute detailed Youtube Video](https://www.youtube.com/watch?v=J3Ugtd3kDks&list=PLEv5wGuO-nlCG0vGYjktEjpwVfhTBWX8P&index=4)
+[How to Bulk Export | 2 minute YouTube Video](https://www.youtube.com/watch?v=J3Ugtd3kDks&list=PLEv5wGuO-nlCG0vGYjktEjpwVfhTBWX8P&index=4)
 
 ### 5. Bulk Import
 
 - Place all workbooks in a single folder.
 - Select the "Input/Output Folder" icon in the Bulk-Calculate ribbon.
 - Choose the folder containing the workbooks.
-- Click "Import Data" in the Bulk-Calculate ribbon to populate the "Summary" sheet with data from the workbooks.
+- Click "Import Data" to populate the "Summary" sheet.
 
-> **Note**: Bulk Import works only if all workbooks follow the same template, meaning they **must comply** with the **specified data mapping**.
+> **Note**: Bulk Import works only if all workbooks follow the same template structure, meaning they **must comply** with the **specified data mapping**.
 
-[How to Bulk Import | 3 minute detailed Youtube Video](https://www.youtube.com/watch?v=DmgdLhYtYg4&list=PLEv5wGuO-nlCG0vGYjktEjpwVfhTBWX8P&index=5)
+[How to Bulk Import | 3 minute YouTube Video](https://www.youtube.com/watch?v=DmgdLhYtYg4&list=PLEv5wGuO-nlCG0vGYjktEjpwVfhTBWX8P&index=5)
 
 <!-- ## Contribution
 
