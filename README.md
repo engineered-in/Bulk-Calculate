@@ -14,6 +14,7 @@
 
 **Bulk-Calculate** is an Excel utility designed to streamline **repetitive**, **template**-based engineering calculations. By centralizing inputs and outputs into a **single summary table**, it helps engineers focus on their work instead of managing countless files. Ideal for civil, mechanical, chemical, and electrical engineers, Bulk-Calculate makes engineering projects more **data-driven** and **efficient**.
 
+[Artificial Intelligence Anchors Presenting You Bulk-Calculate | 9 minute YouTube Video](https://www.youtube.com/watch?v=9ckYebBgo7U)
 
 ## The Problem: Pain Points in Engineering Calculations
 
