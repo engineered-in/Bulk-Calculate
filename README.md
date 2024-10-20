@@ -20,16 +20,14 @@
 
 Many engineering disciplines rely heavily on standardized templates for calculations—like connection design in structural engineering or equipment sizing in mechanical engineering. Typically, these calculations are done in a validated Excel file used **repeatedly** for different projects, with project-specific information (like client name, logo) adjusted as needed.
 
-
 However, the conventional approach of creating separate Excel files for each calculation leads to several issues:
 
-&nbsp;&nbsp;❌ **File Multiplication** - Engineers end up with dozens or hundreds of similar files, making updates and management tedious.  
-&nbsp;&nbsp;❌ **Data Entry Errors** - Copying data across multiple files increases the risk of errors, compromising calculation accuracy.  
-&nbsp;&nbsp;❌ **Scattered Data** - Data is dispersed across multiple files, making it hard to track calculations and find past work.  
-&nbsp;&nbsp;❌ **Manual Updates** - Changes to a template need to be repeated manually across every instance, which is time-consuming.  
+&nbsp;&nbsp;❌ **File Multiplication** - Engineers end up with dozens or hundreds of similar files, making updates and management tedious.   
+&nbsp;&nbsp;❌ **Data Entry Errors** - Copying data across multiple files increases the risk of errors, compromising calculation accuracy.   
+&nbsp;&nbsp;❌ **Manual Updates** - Changes to a template need to be repeated manually across every instance, which is time-consuming.   
 &nbsp;&nbsp;❌ **Inefficient Data Summarization** - Summarizing results from multiple files often requires opening and processing each file individually.   
+&nbsp;&nbsp;❌ **Scattered Data** - Data is dispersed across multiple files, making it hard to track calculations and find past work.   
 
-  
 These issues lead to wasted time, increased potential for mistakes, excessive time and effort spent on **data entry** instead of **engineering innovation**, and make it difficult to see the bigger picture across projects.
 
 For example, imagine needing to verify if a similar design was performed in another project. In the traditional approach, you would have to manually open and search through numerous Excel files scattered across your system. Each file might have different naming conventions or be stored in different folders, making it time-consuming and frustrating to locate the relevant information, which may have even been created by a colleague who has since left the company. This inefficient process not only wastes valuable engineering hours but also risks missing critical design insights due to the sheer volume of files to manage.
@@ -38,11 +36,11 @@ For example, imagine needing to verify if a similar design was performed in anot
 
 **Bulk-Calculate** addresses these challenges by creating a centralized data-driven workflow: a single summary table, with each row representing a calculation file,
 
-&nbsp;&nbsp;✅ **Single Source of Truth** - All calculation data is recorded in a single summary table, providing a clear overview.  
-&nbsp;&nbsp;✅ **Minimized File Handling** - No more handling multiple calculation files—inputs and outputs are updated directly in the summary.  
-&nbsp;&nbsp;✅ **Efficient Bulk Operations** - Perform calculations for multiple entries in one go, saving time and reducing human error.  
-&nbsp;&nbsp;✅ **Data Visibility** - Easily review, compare, and reuse calculations across different projects.  
-&nbsp;&nbsp;✅ **Bulk Export and Import** - Export results into separate files or PDFs, or import existing calculations into the summary table—all without sacrificing the familiar Excel environment.  
+&nbsp;&nbsp;✅ **Single Source of Truth** - All calculation data is recorded in a single summary table, providing a clear overview.   
+&nbsp;&nbsp;✅ **Minimized File Handling** - No more handling multiple calculation files—inputs and outputs are updated directly in the summary.   
+&nbsp;&nbsp;✅ **Efficient Bulk Operations** - Perform calculations for multiple entries in one go, saving time and reducing human error.   
+&nbsp;&nbsp;✅ **Data Visibility** - Easily review, compare, and reuse calculations across different projects.   
+&nbsp;&nbsp;✅ **Bulk Export and Import** - Export results into separate files or PDFs, or import existing calculations into the summary table—all without sacrificing the familiar Excel environment.   
 
 By **consolidating data** and reducing file clutter, Bulk-Calculate helps engineers focus on **engineering work**, rather than file management.
 
@@ -51,8 +49,8 @@ By **consolidating data** and reducing file clutter, Bulk-Calculate helps engine
 - **Template-based calculations**: Use any of your calculation file as a template
 - **Mapping Wizard**: Easily map calculation input and output cells from your template
 - **Summary table**: Get a comprehensive overview of all calculation inputs and outputs in one place
-- **Bulk calculation**: Perform calculations for multiple scenarios/data-points with a single click  
-- **Bulk export**: Export individual calculation spreadsheets or PDF files directly from the Summary table  
+- **Bulk calculation**: Perform calculations for multiple scenarios/data-points with a single click
+- **Bulk export**: Export individual calculation spreadsheets or PDF files directly from the Summary table
 - **Bulk import**: Import data from existing calculation spreadsheets into Bulk-Calculate.
 
 
