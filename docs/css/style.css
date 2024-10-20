@@ -16,6 +16,7 @@
 }
 
 .video-thumbnail {
+  position: relative;
   width: 480px;
   height: 251px;
   margin-left: auto;
@@ -34,19 +35,17 @@
 
 
 .play-icon {
-
   position: absolute;
-  top: 30%;
-  left: 47.5%;
-  transform: translate(-50% -30%);
+  top: 50%;
+  left: calc(50%);
+  transform: translate(-35px, -35px);
+  transform-origin: 0 0;
   cursor: pointer;
   text-decoration: none;
   width: 70px;
   height: 70px;
   display: inline-block;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 24 24'%3E%3Cpath d='M19 3H5C3.89 3 3 3.89 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.89 20.1 3 19 3' fill='%23ff0000'/%3E%3Cpath d='M10 16V8L15 12' fill='%23ffffff'/%3E%3C/svg%3E");
-
-
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -58,7 +57,58 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .card:hover,
-.card:active {
+.card:active,
+.card.active {
   transform: translateY(-10px);
   box-shadow: 8px 8px 20px rgb(111, 66, 193)!important;
+}
+
+.progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+#toTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 99;
+  display: none;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  transform: translateY(-3px);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+@media (max-width: 768px) {
+  #toTopBtn {
+    bottom: 30px;
+    right: 10px;
+  }
+}
+
+#toTopBtn:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 20px rgba(106, 13, 173, 0.5);
+}
+
+.ribbon-wrapper {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 9999;
+}
+
+.ribbon {
+  background-color: rgba(111, 66, 193, 0.7);
+  border-radius: 20px;
+  color: white;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  transform-origin: 0 0;
 }
