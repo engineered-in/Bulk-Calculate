@@ -83,6 +83,10 @@
   box-shadow: 8px 8px 20px rgb(111, 66, 193) !important;
 }
 
+.progress {
+  height: 5px!important;
+}
+
 .progress-container {
   position: fixed;
   top: 0;
